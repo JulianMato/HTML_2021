@@ -7,24 +7,7 @@
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300'>
     <link rel='stylesheet' type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <script>
-        function showResult(str) {
-            if (str.length == 0) {
-                document.getElementById("livesearch").innerHTML = "";
-                document.getElementById("livesearch").style.border = "0px";
-                return;
-            }
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("livesearch").innerHTML = this.responseText;
-                    document.getElementById("livesearch").style.border = "1px solid #A5ACB2";
-                }
-            }
-            xmlhttp.open("GET", "livesearch.php?q=" + str, true);
-            xmlhttp.send();
-        }
-    </script>
+    <script src="showResults.js"></script>
 </head>
 
 <body>
@@ -38,7 +21,7 @@
                 <div class="nav">
                     <div class="search-container">
                         <form>
-                            <input type="text" placeholder="Search.." name="search" onkeyup="showResult(this.value)">
+                            <input type="text" placeholder="Search.." name="search" onkeyup="showResult(value)">
                             <button type="submit"><i class="fa fa-search"></i></button>
                             <div id="livesearch"></div>
                         </form>
