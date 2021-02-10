@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("HTML_2021/xml/links.xml");
+$xmlDoc->load("140/xml/links.xml");
 
 $x=$xmlDoc->getElementsByTagName('link');
 
