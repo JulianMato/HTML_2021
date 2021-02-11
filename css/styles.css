@@ -20,6 +20,19 @@ body {
   font-size: 18px;
 }
 
+.center-results{
+  position: static;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.background-serch{
+  background-color: #e9e9e9;
+  border: 0px;
+}
+
 .bannar-image {
   border-radius: 45px;
 }
@@ -50,7 +63,7 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+  
 .topnav a.active {
   background-color: #2196f3;
   color: white;
