@@ -1,26 +1,10 @@
 <pages>
     <link>
-        <title>Amazon</title>
-        <url>https://www.amazon.com/</url>
+        <title>Homepage v1.0</title>
+        <url>https://solace.ist.rit.edu/~jmm5458/140/hw/homepage_1/</url>
     </link>
     <link>
-        <title>GitHub</title>
-        <url>https://github.com/</url>
-    </link>
-    <link>
-        <title>Reddit</title>
-        <url>https://www.reddit.com/</url>
-    </link>
-    <link>
-        <title>Julians Websight</title>
-        <url>https://solace.ist.rit.edu/~jmm5458/140/test/?search=CSS</url>
-    </link>
-    <link>
-        <title>RIT</title>
-        <url>https://www.rit.edu/</url>
-    </link>
-    <link>
-        <title>US gov</title>
-        <url>https://www.usa.gov/</url>
+        <title>valid</title>
+        <url>https://solace.ist.rit.edu/~jmm5458/140/hw/valid/</url>
     </link>
 </pages>
