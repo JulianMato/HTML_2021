@@ -2,16 +2,17 @@
 <html lang=en>
 
 <head>
-    <title>Julia Mato-Hernandez | ISTE student at RIT</title>
+    <title>Julian Mato-Hernandez | ISTE student at RIT</title>
     <meta charset="utf-8">
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300'>
     <link rel='stylesheet' type='text/css'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <script src="js/showResults.js"></script>
+    <script src="js/display.js"></script>
 </head>
 
-<body>
+<body onload="filterSelection('all')">
     <div class="container">
         <div class="nav">
             <div class="topnav">
@@ -23,180 +24,175 @@
             <img class="bannar-image" src="assets/banner-croped.jpg" alt="main banner" width=100% height="225vp">
             <div class="center">
                 <div class="nav">
-                    <div class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search.." name="search" onkeyup="showResult(value)">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                            <div class="center-results">
-                                <div class="background-serch">
-                                    <div id="livesearch"></div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="searchContainer">
+                        <div id="myBtnContainer">
+                            <form id="myForm">
+                                <input class="btn" type="search" id="mySearch" placeholder="Search..." onkeyup="filterSelection(value)">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <ul id="hexGrid">
-            <!-- start -->
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="hw/homepage_1/">
-                        <img class="img" src="assets/waterfall-5970132_1920.jpg" alt="waterfall">
-                        <h1>Homepage v1.0</h1>
-                        <p>First Version of the Home Page  hello</p>
-                    </a>
-                </div>
-            </li>
-            <!-- end -->
-            <!-- start -->
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="hw/valid/">
-                        <img class="img" src="assets/berries-5943568_1920.jpg" alt="berries">
-                        <h1>Broken Page Fix</h1>
-                        <p>A web page that needed to pass a validator</p>
-                    </a>
-                </div>
-            </li>
-            <!-- end -->
-            <!--
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/cat-5965148_1920.jpg" alt="cat">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/fence-5961975_1920.jpg" alt="fence">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/forest-5940982_1920.jpg" alt="forest1">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/forest-5952310_1920.jpg" alt="forest2">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/mountains-5862169_1920.jpg" alt="mountains2">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/mountain-5678172_1920.jpg" alt="mountains3">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/ocean-3605547_1920.jpg" alt="ocean">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/peony-5895671_1920.jpg" alt="peony">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/village-5954331_1920.jpg" alt="village">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/winter-5897155_1920.jpg" alt="winter1">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/winter-5917436_1920.jpg" alt="winter2">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            !-- start --
-            <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" href="homepage_1.html">
-                        <img class="img" src="assets/winter-5968452_1920.jpg" alt="winter3">
-                        <h1>****</h1>
-                        <p>****</p>
-                    </a>
-                </div>
-            </li>
-            !-- end --
-            -->
-        </ul>
+    
+    <div id="hexGrid">
+        <!-- start -->
+        <div class="hex home page v1.0">
+            <div class="hexIn">
+                <a class="hexLink" href="hw/homepage_1/">
+                    <img class="img" src="assets/waterfall-5970132_1920.jpg" alt="waterfall">
+                    <h1>Homepage v1.0</h1>
+                    <p>First Version of the Home Page  hello</p>
+                </a>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="hex broken page fix">
+            <div class="hexIn">
+                <a class="hexLink" href="hw/valid/">
+                    <img class="img" src="assets/berries-5943568_1920.jpg" alt="berries">
+                    <h1>Broken Page Fix</h1>
+                    <p>A web page that needed to pass a validator</p>
+                </a>
+            </div>
+        </div>
+        <!-- end -->
+        <!--
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/cat-5965148_1920.jpg" alt="cat">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/fence-5961975_1920.jpg" alt="fence">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/forest-5940982_1920.jpg" alt="forest1">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/forest-5952310_1920.jpg" alt="forest2">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/mountains-5862169_1920.jpg" alt="mountains2">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/mountain-5678172_1920.jpg" alt="mountains3">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/ocean-3605547_1920.jpg" alt="ocean">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/peony-5895671_1920.jpg" alt="peony">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/village-5954331_1920.jpg" alt="village">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/winter-5897155_1920.jpg" alt="winter1">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/winter-5917436_1920.jpg" alt="winter2">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        !-- start --
+        <div class="hex">
+            <div class="hexIn">
+                <a class="hexLink" href="homepage_1.html">
+                    <img class="img" src="assets/winter-5968452_1920.jpg" alt="winter3">
+                    <h1>****</h1>
+                    <p>****</p>
+                </a>
+            </div>
+        </div>
+        !-- end --
+        -->
     </div>
 </body>
 
