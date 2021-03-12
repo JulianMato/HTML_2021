@@ -2,6 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
   margin: 0;
+  overflow-x: hidden;
   height: auto;
   color: #000;
   background: linear-gradient(141deg, hsl(0, 0%, 100%),
@@ -53,7 +54,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  width: 40%;
+  width: 35%;
 }
 
 /*********************************************************************/
@@ -245,20 +246,19 @@ input:checked + .slider:before {
 img.sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 8%;
-  left: .7%;
+  left: 88%;
+  top: 4%;
   width: 200px;
   border-radius: 50%;
-  transition: margin-left 0.5s;
 }
 
 /*********************************************************************/
 
 .contentarea {
   height: auto;
-  width: 95%;
-  padding-top: 4%;
-  padding-left: 12%;
+  width: 82%;
+  padding-top: 2%;
+  padding-left: 5%;
   transition: margin-left 0.5s;
 }
 
@@ -276,7 +276,7 @@ img.sticky {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: rgb(232, 139, 17);
+  background-color: #8f5529;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -285,7 +285,6 @@ img.sticky {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -298,8 +297,8 @@ img.sticky {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgba(255, 255, 255, 0.912);
-  border: 4px solid #FF9F55;
+  background-color: #af9580;
+  border: 4px solid #8f5529;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -307,12 +306,15 @@ img.sticky {
 
 /* Place the container to the left */
 .left {
-  left: -9%;
+  padding: 10px 40px;
+  left: -8.9%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  padding: 10px 0;
+  
+  left: 46.3%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -326,7 +328,7 @@ img.sticky {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent rgba(192, 111, 35, 0.275);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -339,13 +341,13 @@ img.sticky {
   z-index: 1;
   left: 30px;
   border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-width: 10px 10px 10px 34.1px;
+  border-color: transparent rgba(192, 111, 35, 0.275) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: 17px;
 }
 
 /* The actual content */
@@ -355,6 +357,8 @@ img.sticky {
   position: relative;
   border-radius: 6px;
 }
+
+/*********************************************************************/
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -389,9 +393,15 @@ img.sticky {
   }
 }
 
-/*********************************************************************/
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 800px) and (max-width: 1280px) {
+  img.sticky {width: 150px;}
+}
+
+@media screen and (max-height: 700px) and (max-width: 1000px) {
+  img.sticky {width: 100px;}
 }
