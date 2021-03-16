@@ -1,137 +1,117 @@
-<!DOCTYPE HTML>
-<html lang=en>
-
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <title>Julian Mato-Hernandez | ISTE student at RIT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <script type = "text/javascript" src="assets/JS/nav.js"></script> 
-    <script type = "text/javascript" src="assets/JS/dark.js"></script> 
-    <script type = "text/javascript" src="assets/JS/backtotop.js"></script> 
-    <script type = "text/javascript" src="assets/JS/type.js"></script> 
-</head>
+    <script type="text/javascript" src="assets/JS/nav.js"></script>
+    <script type="text/javascript" src="assets/JS/dark.js"></script>
+    <script type="text/javascript" src="assets/JS/backtotop.js"></script>
+    <script type="text/javascript" src="assets/JS/type.js"></script>
+  </head>
 
-<body>
+  <body>
     <div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="education.html">Education</a>
+        <a href="personal.html">Personal</a>
+        <!--<a href="homework.html">Homework</a>-->
+      </div>
+      <div id="main">
+        <span
+          style="position: fixed; font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">About</a>
-            <a href="resume.html">Resume</a>
-            <a href="education.html">Education</a>
-            <a href="personal.html">Personal</a>
-            <a href="#">Contact</a>
-            <a href="homework.html">Homework</a>
-        </div>
-        <div id="main">
-            <span style="position: fixed;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </div>
-        
-        <label class="switch">
-            <input type="checkbox" onclick="dark_mode()">
-            <span class="slider round"></span>
-        </label>
+      <label class="switch">
+        <input type="checkbox" onclick="dark_mode()" />
+        <span class="slider round"></span>
+      </label>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-
-        <div id="socialBar" class="icon-bar">
-            <a href="https://twitter.com/mato_julian" class="twitter"><i class="fa fa-twitter"></i></a> 
-            <a href="https://www.linkedin.com/in/julian-mato-hernandez-ab272a158" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/watch?v=jXsdKpOWL1U" class="youtube"><i class="fa fa-youtube"></i></a> 
-            <a href="https://github.com/JulianMato" class="github"><i class="fa fa-github"></i></a> 
-        </div>
+      <div id="socialBar" class="icon-bar">
+        <a href="https://twitter.com/mato_julian" class="twitter"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/julian-mato-hernandez-ab272a158"
+          class="linkedin"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://www.youtube.com/watch?v=jXsdKpOWL1U" class="youtube"
+          ><i class="fa fa-youtube"></i
+        ></a>
+        <a href="https://github.com/JulianMato" class="github"
+          ><i class="fa fa-github"></i
+        ></a>
+      </div>
     </div>
     <div id="conar" class="contentarea">
-        <div class="timeline">
-            <div class="container left">
-              <div class="content">
-                <h2>2017</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2016</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>2015</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2012</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>2011</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2007</h2>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-              </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                  <h2>2007</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                  <h2>2007</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-            </div>
-              <div class="container left">
-                <div class="content">
-                  <h2>2015</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h2>2012</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container left">
-                <div class="content">
-                  <h2>2011</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h2>2007</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container left">
-                  <div class="content">
-                    <h2>2007</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                  </div>
-              </div>
-              <div class="container right">
-                  <div class="content">
-                    <h2>2007</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                  </div>
-              </div>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>College - 2019</h2>
+            <p>
+              Enroled in the Rochester Institute of Technology studying
+              Computing and Informations Technology(CIT)
+            </p>
+          </div>
         </div>
+        <div class="container right">
+          <div class="content">
+            <h2>High school - 2019</h2>
+            <p>Graduated from Delaware valey freinds school</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2018</h2>
+            <p>Hiked el camino de santiago</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2017</h2>
+            <p>
+              Became head programer / co-leader of the seaperch team at DVFS
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2017</h2>
+            <p>Built and managed my own cluster</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2016</h2>
+            <p>
+              Spoke at the University of Pennsylvania about the use of
+              technology in the education of kids with lerning disabilities
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>High school - 2015</h2>
+            <p>Enroled in Delaware valey freinds school(DVFS)</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
