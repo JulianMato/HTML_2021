@@ -1,41 +1,47 @@
 body {
   font-family: "Lato", sans-serif;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
   margin: 0;
   overflow-x: hidden;
   height: auto;
   color: #000;
-  background: linear-gradient(141deg, hsl(0, 0%, 100%),
-  hsl(216.92, 41.94%, 93.92%), 
-  hsl(214.62, 41.94%, 87.84%), 
-  hsl(213.85, 41.94%, 81.76%), 
-  hsl(213.46, 41.94%, 75.69%), 
-  hsl(212.73, 42.31%, 69.41%), 
-  hsl(212.25, 42.55%, 63.14%), 
-  hsl(210.63, 43.24%, 56.47%), 
-  hsl(208.45, 46.4%, 49.02%), 
-  hsl(204.16, 74.87%, 39.02%));
+  background: linear-gradient(
+    141deg,
+    hsl(0, 0%, 100%),
+    hsl(216.92, 41.94%, 93.92%),
+    hsl(214.62, 41.94%, 87.84%),
+    hsl(213.85, 41.94%, 81.76%),
+    hsl(213.46, 41.94%, 75.69%),
+    hsl(212.73, 42.31%, 69.41%),
+    hsl(212.25, 42.55%, 63.14%),
+    hsl(210.63, 43.24%, 56.47%),
+    hsl(208.45, 46.4%, 49.02%),
+    hsl(204.16, 74.87%, 39.02%)
+  );
 }
 
 /*********************************************************************/
 
 .dark-mode {
-  background: linear-gradient(141deg, hsl(0, 1.33%, 44.12%),
-  hsl(0, 1.51%, 39.02%),
-  hsl(0, 1.15%, 34.12%),
-  hsl(0, 2.01%, 29.22%),
-  hsl(0, 1.59%, 24.71%),
-  hsl(0, 1.96%, 20%),
-  hsl(0, 2.5%, 15.69%),
-  hsl(0, 3.45%, 11.37%),
-  hsl(0, 5.56%, 7.06%),
-  hsl(0, 100%, 0.59%));
+  background: linear-gradient(
+    141deg,
+    hsl(0, 1.33%, 44.12%),
+    hsl(0, 1.51%, 39.02%),
+    hsl(0, 1.15%, 34.12%),
+    hsl(0, 2.01%, 29.22%),
+    hsl(0, 1.59%, 24.71%),
+    hsl(0, 1.96%, 20%),
+    hsl(0, 2.5%, 15.69%),
+    hsl(0, 3.45%, 11.37%),
+    hsl(0, 5.56%, 7.06%),
+    hsl(0, 100%, 0.59%)
+  );
   color: white;
 }
 
 /*********************************************************************/
 
-input[type=text] {
+input[type="text"] {
   position: fixed;
   width: 130px;
   box-sizing: border-box;
@@ -43,8 +49,8 @@ input[type=text] {
   border-radius: 4px;
   font-size: 13px;
   background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.3s ease-in-out, margin-left 0.5s;
@@ -53,7 +59,7 @@ input[type=text] {
   left: 8ex;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   width: 35%;
 }
 
@@ -92,7 +98,7 @@ input[type=text]:focus {
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -106,8 +112,8 @@ input[type=text]:focus {
   right: 0;
   bottom: 0;
   background-color: rgb(173, 197, 204);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -118,8 +124,8 @@ input[type=text]:focus {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -127,7 +133,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -175,7 +181,7 @@ input:checked + .slider:before {
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -237,17 +243,17 @@ input:checked + .slider:before {
 
 #main {
   position: fixed;
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
 /*********************************************************************/
 
-img.sticky {
+img.me {
   position: -webkit-sticky;
   position: sticky;
   left: 88%;
-  top: 4%;
+  top: 100ex;
   width: 200px;
   border-radius: 50%;
 }
@@ -257,9 +263,14 @@ img.sticky {
 .contentarea {
   height: auto;
   width: 82%;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-left: 5%;
   transition: margin-left 0.5s;
+}
+
+.myname {
+  height: 10%;
+  width: 20%;
 }
 
 /*********************************************************************/
@@ -273,7 +284,7 @@ img.sticky {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #8f5529;
@@ -292,7 +303,7 @@ img.sticky {
 
 /* The circles on the timeline */
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -313,7 +324,7 @@ img.sticky {
 /* Place the container to the right */
 .right {
   padding: 10px 0;
-  
+
   left: 46.3%;
 }
 
@@ -364,36 +375,41 @@ img.sticky {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   /* Full-width containers */
   .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
+  .left::after,
+  .right::after {
+    left: 15px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .right {
-  left: 0%;
+    left: 0%;
   }
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
