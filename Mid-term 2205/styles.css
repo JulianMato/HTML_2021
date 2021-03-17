@@ -1,0 +1,114 @@
+/*/ Add your selectors and declarations to this stylesheet  /*/
+
+
+/* Don't touch these first two declarations! They are forcing everything to inherit the box sizing method, which makes measurements much easier / intuitive */
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: clear;
+}
+
+.topnav li {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 30px 80px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav li:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+li.nav-links {
+    list-style: none;
+}
+
+img.image1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+span.b {
+    width: 75%;
+    float: left;
+}
+
+span.c {
+    width: 25%;
+    float: left;
+}
+
+.lft-side {
+    text-align: left;
+    color: white;
+    width: 100%;
+    height: 90vh;
+}
+
+.left-img {
+    position: absolute;
+    width: 73.2vw;
+    height: 90vh;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.rt-side {
+    background-color: rgb(242, 214, 178);
+    height: 90vh;
+    width: 100%;
+}
+
+img.rt-top-img {
+    width: 23vw;
+    height: 30vh;
+    padding: 4%;
+}
+
+article.text {
+    background-color: rgb(250, 227, 198);
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 4%;
+}
+
+aside.slideshow {
+    text-align: center;
+    height: 24vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+img.slideshow-img {
+    width: 32%;
+    padding-left: 2%;
+    object-fit: scale-down;
+    display: inline-block;
+}
